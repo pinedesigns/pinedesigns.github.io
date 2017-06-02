@@ -27,7 +27,10 @@ version:          2.1.0
 github:
   repo:           https://github.com/pinedesigns/pinedesigns.github.io/
 
-gems: [jekyll-paginate,jekyll-gist]
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
 
 zazzle:
     store: 'https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio'
