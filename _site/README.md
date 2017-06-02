@@ -1,1 +1,2 @@
-[# Pine designs![Pine Designs][{{site.banner}}]]({{site.zazzle.store}})
+# [Pine designs]({{site.zazzle.store}})
+[![Pine Designs][{{site.banner}}]]({{site.zazzle.store}})
