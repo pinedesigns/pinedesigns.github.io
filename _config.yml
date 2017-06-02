@@ -11,12 +11,12 @@ title:            Pine Designs
 tagline:          'Well designed fun'
 description:      'Well designed fun'
 logo:             /public/img/logo_trans.svg
-url:              http://hyde.getpoole.com
+url:              https://pinedesigns.github.io
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Booligoosh'
+  url:            https://booligoosh.github.io/
 
 paginate:         5
 
@@ -24,7 +24,7 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/pinedesigns/pinedesigns.github.io/
 
 gems: [jekyll-paginate,jekyll-gist]
 
