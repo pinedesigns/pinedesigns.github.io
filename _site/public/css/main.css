@@ -1,0 +1,15 @@
+/*@import "";*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+body {
+  background-color: #eee; }
+
+.sidebar {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.5); }
+
+.sidebar-about h1 {
+  font-family: "Montserrat";
+  font-size: 2rem; }
+
+.sidebar a {
+  color: #000; }
