@@ -31,6 +31,7 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-feed
+  - github-pages
 
 zazzle:
     store: 'https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio'
