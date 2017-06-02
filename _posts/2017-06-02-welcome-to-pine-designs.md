@@ -4,4 +4,4 @@ title: Welcome to Pine Designs!
 ---
 [![{{site.title}}]({{site.banner}})]({{site.zazzle.store}})
 A huge warm welcome from Pine Designs! Pine Designs in a store which stocks all sorts of items from wrapping paper to shirts. All of these items have  beautiful modern and trendy designs on them. If you have an idea for a design, a question or a comment, feel free to [contact us](mailto:{{site.email}}).
-### [Take me to your shop!]({{site.zazzle.shop}})
+### [Take me to your shop!]({{site.zazzle.store}})
