@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<div class="posts" id="post-content">
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
@@ -35,3 +35,16 @@ title: Home
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 </div>
+
+
+<script>
+    // make all links open in new tab
+    var links = document.getElementById('post-content').getElementsByTagName('a');
+    for (var i = 0; i < links.length; i++){
+        var parser = document.createElement('a');
+        parser.href = links[i].href;
+        if (parser.origin != "{{site.url}}" || (parser.origin == "{{site.url}}" && parser.pathname == "{{site.baseurl}}/out")){
+            links[i].target="blank";
+        }
+    }
+</script>

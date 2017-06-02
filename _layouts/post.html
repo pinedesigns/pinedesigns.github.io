@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="post">
+<div class="post" id="post-content">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
@@ -23,3 +23,14 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+<script>
+    // make all links open in new tab
+    var links = document.getElementById('post-content').getElementsByTagName('a');
+    for (var i = 0; i < links.length; i++){
+        var parser = document.createElement('a');
+        parser.href = links[i].href;
+        if (parser.origin != "{{site.url}}" || (parser.origin == "{{site.url}}" && parser.pathname == "{{site.baseurl}}/out")){
+            links[i].target="blank";
+        }
+    }
+</script>

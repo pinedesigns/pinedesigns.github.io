@@ -11,8 +11,11 @@ title:            Pine Designs
 tagline:          'Well designed fun'
 description:      'Well designed fun'
 logo:             /public/img/logo_trans.svg
+banner:           /public/img/banner.svg
 url:              https://pinedesigns.github.io
 baseurl:          /
+
+email:            booligoosh@optusnet.com.au
 
 author:
   name:           'Booligoosh'

@@ -64,6 +64,12 @@
       
         
           
+            <a class="sidebar-nav-item" href="/contact/">Contact</a>
+          
+        
+      
+        
+          
         
       
         
@@ -72,7 +78,6 @@
       
 
       <a class="sidebar-nav-item" href="https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio" target="blank" rel="nofollow">Zazzle store</a>
-      <!--<a class="sidebar-nav-item" href="https://github.com/poole/hyde">GitHub project</a>-->
       <!--<span class="sidebar-nav-item">Currently v2.1.0</span>-->
     </nav>
 
@@ -82,10 +87,13 @@
 
 
     <div class="content container">
-      <div class="post">
+      <div class="post" id="post-content">
   <h1 class="post-title">Welcome to Pine Designs!</h1>
   <span class="post-date">02 Jun 2017</span>
-  <p>Hi!</p>
+  <p><a href="https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio"><img src="/public/img/banner.svg" alt="Pine Designs"></a>
+A huge warm welcome from Pine Designs! Pine Designs in a store which stocks all sorts of items from wrapping paper to shirts. All of these items have  beautiful modern and trendy designs on them. If you have an idea for a design, a question or a comment, feel free to <a href="mailto:booligoosh@optusnet.com.au">contact us</a>.</p>
+
+<h3><a href="">Take me to your shop!</a></h3>
 
 </div>
 
@@ -93,36 +101,19 @@
   <h2>Related Posts</h2>
   <ul class="related-posts">
     
-      <li>
-        <h3>
-          <a href="/2013/12/28/introducing-hyde/">
-            Introducing Hyde
-            <small>28 Dec 2013</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2012/02/07/example-content/">
-            Example content
-            <small>07 Feb 2012</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2012/02/06/whats-jekyll/">
-            What's Jekyll?
-            <small>06 Feb 2012</small>
-          </a>
-        </h3>
-      </li>
-    
   </ul>
 </div>
-
+<script>
+    // make all links open in new tab
+    var links = document.getElementById('post-content').getElementsByTagName('a');
+    for (var i = 0; i < links.length; i++){
+        var parser = document.createElement('a');
+        parser.href = links[i].href;
+        if (parser.origin != "http://localhost:4000" || (parser.origin == "http://localhost:4000" && parser.pathname == "//out")){
+            links[i].target="blank";
+        }
+    }
+</script>
     </div>
 
   </body>
