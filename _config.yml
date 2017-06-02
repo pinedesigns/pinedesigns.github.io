@@ -10,8 +10,6 @@ relative_permalinks: false
 title:            Pine Designs
 tagline:          'Well designed fun'
 description:      'Well designed fun'
-logo:             /public/img/logo_trans.svg
-banner:           /public/img/banner.svg
 url:              https://pinedesigns.github.io
 baseurl:          /
 
@@ -33,3 +31,8 @@ gems: [jekyll-paginate,jekyll-gist]
 
 zazzle:
     store: 'https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio'
+    
+    
+img:
+    logo:             /public/img/logo_trans.svg
+    banner:           /public/img/banner.svg
