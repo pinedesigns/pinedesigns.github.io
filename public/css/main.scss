@@ -7,6 +7,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
 
+$pine-yellow: #e8d000;
+$pine-green: #00a400;
+
 body {
     //background-color: #202020;
     background-color: #eee;
@@ -19,7 +22,17 @@ body {
 .sidebar-about h1 {
     font-family: "Montserrat";
     font-size: 2rem;
+    font-weight: 500;
 }
 .sidebar a {
     color: #000;
+}
+.lead {
+    font-size: 1.2484rem;
+}
+.title-colored-pine {
+    color: $pine-yellow;
+}
+.title-colored-designs {
+    color: $pine-green;
 }

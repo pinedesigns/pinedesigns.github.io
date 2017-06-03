@@ -8,9 +8,10 @@ relative_permalinks: false
 
 # Setup
 title:            Pine Designs
-tagline:          'Well designed fun'
-description:      'Well designed fun'
-url:              https://pinedesigns.github.io
+title-colored:    '<span class="title-colored-pine">Pine</span> <span class="title-colored-designs">Designs</span>'
+tagline:          'Fun never looked so good.'
+description:      'Fun never looked so good.'
+url:              
 baseurl:          /
 
 email:            booligoosh@optusnet.com.au
@@ -34,8 +35,8 @@ gems:
   - github-pages
 
 zazzle:
-    store: 'https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio'
-    
+    store:     'https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio'
+newsletter:    'https://bit.ly/pine_designs_newsletter_01'
     
 img:
     logo:             /public/img/logo_trans.svg

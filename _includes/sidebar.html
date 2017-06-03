@@ -4,7 +4,7 @@
       <h1>
         <a href="{{ site.baseurl }}">
          <img src="{{site.img.logo}}" alt="{{site.title}}">
-          {{ site.title }}
+          {{ site.title-colored }}
         </a>
       </h1>
       <p class="lead">{{ site.description }}</p>
@@ -26,7 +26,7 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-
+      <a class="sidebar-nav-item" href="{{ site.newsletter }}" target="blank" rel="nofollow">Newsletter</a>
       <a class="sidebar-nav-item" href="{{ site.zazzle.store }}" target="blank" rel="nofollow">Zazzle store</a>
       <!--<span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
     </nav>
