@@ -36,3 +36,77 @@ body {
 .title-colored-designs {
     color: $pine-green;
 }
+
+.posts {
+    margin-top: 7rem; // To make up for the relative positioning of .home-shop-now-wrapper
+}
+
+.home-shop-now-wrapper {
+    position: relative;
+}
+.home-shop-now {
+    position: absolute; top: 0; left: 0;
+}
+
+.home-shop-now {
+    width: 100%;
+    background-color: #ddd;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+    color: white;
+    opacity: 100;
+    transition: all, 1s;
+}
+.home-shop-now:hover {
+    opacity: 0;
+}
+.home-shop-now-hovered {
+    z-index: -100;
+    background: $pine-yellow;
+    //color: $pine-green;
+}
+.home-shop-now-hovered:hover {
+    z-index: -100;
+    opacity: 100 !important;
+}
+
+
+
+// CSS GRADIENTS from https://www.gradient-animator.com/
+
+.home-shop-now-not-hovered {
+    background: linear-gradient(315deg, #000080, /*#ff0080*/#00ff80);
+    background-size: 400% 400%;
+
+    -webkit-animation: Pine-colors-animation-01 15s ease infinite;
+    -moz-animation: Pine-colors-animation-01 15s ease infinite;
+    -o-animation: Pine-colors-animation-01 15s ease infinite;
+    animation: Pine-colors-animation-01 15s ease infinite;
+
+    @-webkit-keyframes Pine-colors-animation-01 {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes Pine-colors-animation-01 {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-o-keyframes Pine-colors-animation-01 {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes Pine-colors-animation-01 { 
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    transition: background, 1s;
+}

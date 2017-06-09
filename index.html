@@ -2,6 +2,16 @@
 layout: default
 title: Home
 ---
+<div class="home-shop-now-wrapper">
+    <a href="{{site.zazzle.store}}">
+        <div class="home-shop-now home-shop-now-not-hovered">
+            Shop now!
+        </div>
+        <div class="home-shop-now home-shop-now-hovered">
+            &#x1f34d; Shop now! &#x1f34d;
+        </div>
+    </a>
+</div>
 
 <div class="posts" id="post-content">
   {% for post in paginator.posts %}
