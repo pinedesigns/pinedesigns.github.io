@@ -56,6 +56,10 @@ body {
   z-index: -100;
   background: #e8d000; }
 
+.home-shop-now-hovered span {
+  text-decoration: underline;
+  text-decoration-color: #00a400; }
+
 .home-shop-now-hovered:hover {
   z-index: -100;
   opacity: 100 !important; }

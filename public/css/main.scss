@@ -70,6 +70,11 @@ body {
     background: $pine-yellow;
     //color: $pine-green;
 }
+.home-shop-now-hovered span {
+    text-decoration: underline;
+    text-decoration-color: $pine-green;
+    //color: #008080;
+}
 .home-shop-now-hovered:hover {
     z-index: -100;
     opacity: 100 !important;

@@ -39,5 +39,5 @@ zazzle:
 newsletter:    'https://bit.ly/pine_designs_newsletter_01'
     
 img:
-    logo:             /public/img/logo_trans.svg
-    banner:           /public/img/banner.svg
+    logo:             /public/img/pine-designs-logo-transparent.svg
+    banner:           /public/img/pine-designs-banner.svg
