@@ -16,6 +16,8 @@ baseurl:          /
 
 email:            booligoosh@optusnet.com.au
 
+contact:          /contact/
+
 author:
   name:           'Booligoosh'
   url:            https://booligoosh.github.io/
