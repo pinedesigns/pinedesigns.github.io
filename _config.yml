@@ -33,6 +33,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - github-pages
+  - jekyll-sitemap # leave at the end
 
 zazzle:
     store:     'https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio'
