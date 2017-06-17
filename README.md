@@ -1,4 +1,4 @@
-[![{{site.title}}][banner]][store]
+[![Pine Designs][banner]][store]
 
 [banner]: {{site.img.banner}}
-[store]: {{site.zazzle.store}}
+[store]: /public/img/pine-designs-banner.svg
