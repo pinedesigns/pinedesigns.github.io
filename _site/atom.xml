@@ -4,7 +4,7 @@
  <title>Pine Designs</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-06-20T14:18:56+10:00</updated>
+ <updated>2017-06-20T14:25:31+10:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Booligoosh</name>
@@ -19,7 +19,12 @@
    <id>http://localhost:4000/2017/06/13/life-is-like-a-pineapple-range</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/public/img/post/life-is-like-a-pineapple-range/shirt.jpg&quot; alt=&quot;Life is like a pineapple Men's T-Shirt&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;We have a new range of products… &lt;a href=&quot;https://www.zazzle.com/collections/life_is_like_a_pineapple_range-119380580491205535?rf=238712509161080982&amp;amp;tc=pinedesignsgithubio&quot;&gt;Our “Life is like a pineapple” range!&lt;/a&gt; It features an awesome quote we made up: “Life is like a pineapple. You have to get past the prickly bits to get to the good stuff!”. &lt;a href=&quot;https://www.zazzle.com/collections/life_is_like_a_pineapple_range-119380580491205535?rf=238712509161080982&amp;amp;tc=pinedesignsgithubio&quot;&gt;Check it out now!&lt;/a&gt; Enjoy, and don’t forget to tell us what you think.&lt;/p&gt;
+&lt;p&gt;We have a released new range of products… &lt;a href=&quot;https://www.zazzle.com/collections/life_is_like_a_pineapple_range-119380580491205535?rf=238712509161080982&amp;amp;tc=pinedesignsgithubio&quot;&gt;Our “Life is like a pineapple” range!&lt;/a&gt; It features an awesome quote we made up:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Life is like a pineapple. You have to get past the prickly bits to get to the good stuff!”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Featuring some cool typography, we think this is a great design. We’re only selling it on shirts and the like as otherwise it would be too small. &lt;a href=&quot;https://www.zazzle.com/collections/life_is_like_a_pineapple_range-119380580491205535?rf=238712509161080982&amp;amp;tc=pinedesignsgithubio&quot;&gt;Here’s a link to the range.&lt;/a&gt; Enjoy, and don’t forget to tell us what you think.&lt;/p&gt;
 
 </content>
  </entry>
