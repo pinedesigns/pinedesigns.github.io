@@ -4,13 +4,25 @@
  <title>Pine Designs</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-06-11T17:13:05+10:00</updated>
+ <updated>2017-06-20T11:35:58+10:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Booligoosh</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>New range of pineapple products!</title>
+   <link href="http://localhost:4000/2017/06/09/pineapple-products/"/>
+   <updated>2017-06-09T00:00:00+10:00</updated>
+   <id>http://localhost:4000/2017/06/09/pineapple-products</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/public/img/post/pineapple-products/shirt.jpg&quot; alt=&quot;Pineapple Men's T-Shirt&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another welcome to Pine Designs! Today we are introducing our first range of products… Our &lt;a href=&quot;https://www.zazzle.com.au/collections/modern_pineapple-119235495781044968?rf=238712509161080982&amp;amp;tc=pinedesignsgithubio&quot;&gt;modern pineapple range&lt;/a&gt;! We have pineapple shirts, pineapple sweatshirts, pineapple watches, wrapping paper, mugs, phone cases, stickers, hats and much much more. &lt;a href=&quot;https://www.zazzle.com.au/collections/modern_pineapple-119235495781044968?rf=238712509161080982&amp;amp;tc=pinedesignsgithubio&quot;&gt;Check it out now!&lt;/a&gt; Hope you enjoy ;)&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Welcome to Pine Designs!</title>

@@ -39,8 +39,13 @@ gems:
 
 zazzle:
     store:     'https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio'
+    products:  'https://www.zazzle.com/pinedesigns/products?rf=238712509161080982&tc=pinedesignsgithubio'
+    modern-pineapple: 'https://www.zazzle.com.au/collections/modern_pineapple-119235495781044968?rf=238712509161080982&tc=pinedesignsgithubio'
+
 newsletter:    'https://bit.ly/pine_designs_newsletter_01'
     
+postimg:       /public/img/post
+
 img:
     logo:             /public/img/pine-designs-logo-transparent.svg
     banner:           /public/img/pine-designs-banner.svg
