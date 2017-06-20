@@ -46,8 +46,8 @@ zazzle:
 
 newsletter:    'https://bit.ly/pine_designs_newsletter_01'
     
-postimg:       /public/img/post
+postimg:       https://booligoosh.github.io/public/img/post
 
 img:
-    logo:             /public/img/pine-designs-logo-transparent.svg
-    banner:           /public/img/pine-designs-banner.svg
+    logo:             https://booligoosh.github.io/public/img/pine-designs-logo-transparent.svg
+    banner:           https://booligoosh.github.io/public/img/pine-designs-banner.svg
