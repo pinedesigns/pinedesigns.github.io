@@ -40,7 +40,9 @@ gems:
 zazzle:
     store:     'https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio'
     products:  'https://www.zazzle.com/pinedesigns/products?rf=238712509161080982&tc=pinedesignsgithubio'
-    modern-pineapple: 'https://www.zazzle.com.au/collections/modern_pineapple-119235495781044968?rf=238712509161080982&tc=pinedesignsgithubio'
+    collections:
+        modern-pineapple: 'https://www.zazzle.com/collections/modern_pineapple-119235495781044968?rf=238712509161080982&tc=pinedesignsgithubio'
+        life-is-like-a-pineapple: 'https://www.zazzle.com/collections/life_is_like_a_pineapple_range-119380580491205535?rf=238712509161080982&tc=pinedesignsgithubio'
 
 newsletter:    'https://bit.ly/pine_designs_newsletter_01'
     
