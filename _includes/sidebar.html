@@ -27,7 +27,7 @@
         {% endif %}
       {% endfor %}
       <a class="sidebar-nav-item" href="{{ site.newsletter }}" target="blank" rel="nofollow">Newsletter</a>
-      <a class="sidebar-nav-item sidebar-shop-now" href="{{ site.zazzle.store }}" target="blank" rel="nofollow">Zazzle store</a>
+      <a class="sidebar-nav-item{% if page.title != 'Home' %} sidebar-shop-now{% endif %}" href="{{ site.zazzle.store }}" target="blank" rel="nofollow">Zazzle store</a>
       <!--<span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
     </nav>
 
