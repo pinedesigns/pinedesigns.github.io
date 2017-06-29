@@ -11,8 +11,8 @@ title:            Pine Designs
 title-colored:    '<span class="title-colored-pine">Pine</span> <span class="title-colored-designs">Designs</span>'
 tagline:          'Fun never looked so good.'
 description:      'Fun never looked so good.'
-url:              
-baseurl:          /
+url:              https://pinedesigns.github.io
+baseurl:          
 
 email:            pinedesigns.shop@gmail.com
 

@@ -29,7 +29,7 @@ layout: default
     for (var i = 0; i < links.length; i++){
         var parser = document.createElement('a');
         parser.href = links[i].href;
-        if (parser.origin != "{{site.url}}" || (parser.origin == "{{site.url}}" && parser.pathname == "{{site.baseurl}}/out")){
+        if (parser.origin != "{{site.url}}"){
             links[i].target="blank";
         }
     }
