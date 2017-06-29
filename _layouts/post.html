@@ -23,14 +23,3 @@ layout: default
     {% endfor %}
   </ul>
 </div>
-<script>
-    // make all links open in new tab
-    var links = document.getElementById('post-content').getElementsByTagName('a');
-    for (var i = 0; i < links.length; i++){
-        var parser = document.createElement('a');
-        parser.href = links[i].href;
-        if (parser.origin != "{{site.url}}"){
-            links[i].target="blank";
-        }
-    }
-</script>

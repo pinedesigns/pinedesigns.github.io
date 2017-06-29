@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Our New Juicy Watercolor Pineapple Range
+title: New juicy watercolor pineapple range
 ---
 ![Watercolor Pineapple Badge][product-img]
 

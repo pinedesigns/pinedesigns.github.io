@@ -50,7 +50,12 @@ zazzle:
 newsletter:    'https://bit.ly/pine_designs_newsletter_01'
     
 postimg:       https://pinedesigns.github.io/public/img/post
+imgdirectory:  https://pinedesigns.github.io/public/img
 
 img:
     logo:             https://pinedesigns.github.io/public/img/pine-designs-logo-transparent.svg
     banner:           https://pinedesigns.github.io/public/img/pine-designs-banner.svg
+
+contact:
+    github: https://github.com/pinedesigns/
+    
