@@ -16,7 +16,3 @@ Haven't got an account yet, will add in later:
 <a class="contact-card" href="{{site.contact.dribble}}"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
 <a class="contact-card" href="{{site.contact.paypal}}"><i class="fa fa-paypal" aria-hidden="true"></i><span>PayPal</span></a>
 -->
-
-
-[zazzle-logo]: {{site.imgdirectory}}/contact-icons/zazzle-logo-circle.svg
-[zazzle-logo-temp]: /public/img/contact-icons/zazzle-logo-circle.svg

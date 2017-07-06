@@ -1,42 +1,44 @@
 ---
 ---
-
 /*@import "{{ site.theme }}";*/
 
-
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
-
 $pine-yellow: #e8d000;
 $pine-green: #00a400;
-
 body {
     //background-color: #202020;
     background-color: #eee;
 }
+
 .sidebar {
     //background-color: #eee;
     background-color: #fff;
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
 }
+
 .sidebar-about h1 {
     font-family: "Montserrat";
     font-size: 2rem;
     font-weight: 500;
 }
+
 .sidebar-about img {
     max-width: 100%;
     margin: 0;
 }
+
 .sidebar a {
     color: #000;
 }
+
 .lead {
     font-size: 1.2484rem;
 }
+
 .title-colored-pine {
     color: $pine-yellow;
 }
+
 .title-colored-designs {
     color: $pine-green;
 }
@@ -48,8 +50,11 @@ body {
 .home-shop-now-wrapper {
     position: relative;
 }
+
 .home-shop-now {
-    position: absolute; top: 0; left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .home-shop-now {
@@ -66,19 +71,23 @@ body {
     opacity: 100;
     transition: all, 1s;
 }
+
 .home-shop-now:hover {
     opacity: 0;
 }
+
 .home-shop-now-hovered {
     z-index: -100;
     background: $pine-yellow;
     //color: $pine-green;
 }
+
 .home-shop-now-hovered span {
     text-decoration: underline;
     //text-decoration-color: $pine-green;
     //color: #008080;
 }
+
 .home-shop-now-hovered:hover {
     z-index: -100;
     opacity: 100 !important;
@@ -86,7 +95,8 @@ body {
 }
 
 .sidebar-shop-now {
-    width: /*6.5rem*/100%;
+    width: /*6.5rem*/
+    100%;
     background-color: #ddd;
     text-align: center;
     border-radius: 5px;
@@ -94,48 +104,74 @@ body {
     opacity: 100;
     transition: all, 1s;
 }
+
 .sidebar-shop-now:hover {
     text-decoration: none !important;
     width: 100%
 }
 
-
 // CSS GRADIENTS from https://www.gradient-animator.com/
-
-.home-shop-now-not-hovered, .sidebar-shop-now {
-    background: linear-gradient(315deg, #000080, /*#ff0080*/#00ff80);
+.home-shop-now-not-hovered,
+.sidebar-shop-now {
+    background: linear-gradient(315deg, #000080, /*#ff0080*/
+    #00ff80);
     background-size: 400% 400%;
-
     -webkit-animation: Pine-colors-animation-01 15s ease infinite;
     -moz-animation: Pine-colors-animation-01 15s ease infinite;
     -o-animation: Pine-colors-animation-01 15s ease infinite;
     animation: Pine-colors-animation-01 15s ease infinite;
-
     @-webkit-keyframes Pine-colors-animation-01 {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
     }
     @-moz-keyframes Pine-colors-animation-01 {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
     }
     @-o-keyframes Pine-colors-animation-01 {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
     }
-    @keyframes Pine-colors-animation-01 { 
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
+    @keyframes Pine-colors-animation-01 {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
     }
-    transition: background, 1s;
+    transition: background,
+    1s;
 }
+
 $contact-cards-per-row: 2;
 .contact-card {
-    width: calc(96%/3 /*cards per row*/);
+    width: calc(96%/3/*cards per row*/
+    );
     display: inline-block;
     background-color: #ddd;
     margin: 0;
@@ -147,24 +183,33 @@ $contact-cards-per-row: 2;
     text-align: center;
     transition: all, 0.5s;
 }
+
 .contact-card:hover {
     background-color: #fff;
     text-decoration: none;
     color: #000;
 }
-.contact-card i.fa, .contact-card img {
+
+.contact-card i.fa,
+.contact-card img {
     font-size: 3rem;
 }
-.contact-card:hover i.fa, .contact-card:hover img {
+
+.contact-card:hover i.fa,
+.contact-card:hover img {
     display: none;
 }
+
 .contact-card span {
     display: none;
 }
+
 .contact-card:hover span {
     display: inherit;
 }
-.contact-card img, .contact-card i.fa {
+
+.contact-card img,
+.contact-card i.fa {
     max-width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -173,12 +218,104 @@ $contact-cards-per-row: 2;
     margin-bottom: 2rem;
     width: auto;
 }
+
 .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+
+.social-bottom {
+    //background-color: red;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6rem;
+}
+
+@media (min-width: 48em) {
+    .social-bottom {
+        left: 18rem !important;
+        display: none;
+    }
+}
+
+.social-bottom-inner {
+    height: 3rem;
+    background-color: #eee;
+    text-align: center;
+}
+
+.social-bottom-gradient {
+    background: linear-gradient(rgba(238, 238, 238, 0), #eee);
+    height: 2rem;
+}
+
+.social-bottom-spacer {
+    height: 0.5rem;
+    background-color: #eee;
+}
+
+.social-bottom-contact-card {
+    width: 2.5rem;
+    display: inline-block;
+    background-color: #ddd;
+    margin: 0;
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    height: 2.5rem;
+    border-radius: 100rem;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    text-align: center;
+    transition: all, 0.5s;
+}
+
+.social-bottom-contact-card:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+}
+
+.social-bottom-contact-card i.fa,
+.social-bottom-contact-card img {
+    font-size: 1.5rem;
+    margin-top: 0.45rem;
+}
+
+.social-bottom-contact-card:hover i.fa,
+.social-bottom-contact-card:hover img {
+    //display: none;
+}
+
+.social-bottom-contact-card span {
+    display: none;
+}
+
+.social-bottom-contact-card:hover span {
+    //display: inherit;
+}
+
+.social-bottom-contact-card img,
+.social-bottom-contact-card i.fa {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    //margin-top: 2rem;
+    //height: 3rem;
+    //margin-bottom: 2rem;
+    //width: auto;
 }
