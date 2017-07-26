@@ -17,7 +17,6 @@ baseurlactual:    /
 
 email:            pinedesigns.shop@gmail.com
 
-contact:          /contact/
 
 author:
   name:           'Booligoosh'
@@ -41,14 +40,17 @@ gems:
 zazzle:
     store:     'https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio'
     products:  'https://www.zazzle.com/pinedesigns/products?rf=238712509161080982&tc=pinedesignsgithubio'
+    comments:  'https://www.zazzle.com/pinedesigns/comments'
     collections:
-        modern-pineapple: 'https://www.zazzle.com.au/collections/modern_pineapple_range-119235495781044968?rf=238712509161080982&CMPN=share_dclit&lang=en&social=true'
+        modern-pineapple: 'https://www.zazzle.com/collections/modern_pineapple_range-119235495781044968?rf=238712509161080982&CMPN=share_dclit&lang=en&social=true'
         
-        life-is-like-a-pineapple: 'https://www.zazzle.com.au/collections/life_is_like_a_pineapple_range-119380580491205535?rf=238712509161080982&CMPN=share_dclit&lang=en&social=true'
+        life-is-like-a-pineapple: 'https://www.zazzle.com/collections/life_is_like_a_pineapple_range-119380580491205535?rf=238712509161080982&CMPN=share_dclit&lang=en&social=true'
         
-        hardcore-pineapple: 'https://www.zazzle.com.au/collections/hardcore_pineapple_range-119713769587531496?rf=238712509161080982&CMPN=share_dclit&lang=en&social=true'
+        hardcore-pineapple: 'https://www.zazzle.com/collections/hardcore_pineapple_range-119713769587531496?rf=238712509161080982&CMPN=share_dclit&lang=en&social=true'
         
-        watercolor-pineapple: 'https://www.zazzle.com.au/collections/juicy_watercolor_pineapple_range-119616646632761195?rf=238712509161080982&CMPN=share_dclit&lang=en&social=true'
+        watercolor-pineapple: 'https://www.zazzle.com/collections/juicy_watercolor_pineapple_range-119616646632761195?rf=238712509161080982&CMPN=share_dclit&lang=en&social=true'
+        
+        low-poly-triangulated-pineapple: 'https://www.zazzle.com/collections/low_poly_triangulated_pineapple_range-119795938814986927?rf=238712509161080982&CMPN=share_dclit&lang=en&social=true'
 
 newsletter:    'https://bit.ly/pine_designs_newsletter_01'
     
@@ -60,5 +62,6 @@ img:
     banner:           https://pinedesigns.github.io/public/img/pine-designs-banner.svg
 
 contact:
+    page: /contact/
     github: https://github.com/pinedesigns/
     

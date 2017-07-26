@@ -10,4 +10,4 @@ Also, if you have anything that you want turned into a design you can buy, don't
 
 [watercolor-pineapple-range]: {{site.zazzle.collections.watercolor-pineapple}}
 [product-img]: {{site.postimg}}/watercolor-pineapple-range/badge.jpg
-[contact]: {{site.contact}}
+[contact]: {{site.contact.page}}
