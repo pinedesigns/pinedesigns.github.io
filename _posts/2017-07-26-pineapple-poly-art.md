@@ -13,7 +13,7 @@ We are selling this design on a huge range of items including clothing, mugs, st
 Enjoy!
 
 
-[product-img]: /public/img/post/pineapple-poly-art/notebook.jpg
+[product-img]: {{site.postimg}}/pineapple-poly-art/notebook.jpg
 [low-poly-triangulated-pineapple-range]: {{site.zazzle.collections.low-poly-triangulated-pineapple}}
 [contact]: {{site.contact.page}}
 [comments]: {{site.zazzle.comments}}
