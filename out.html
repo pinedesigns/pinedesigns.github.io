@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script src="https://booligoosh.github.io/urlParams/urlParams.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var url = urlParams.url;
+        var country = "?";
+        $.get("https://ipinfo.io", function (response) {
+            console.log(response.city, response.country);
+            country = response.country;
+        }, "jsonp");
+        //window.location = url;
+    </script>
+    <h1>Redirecting...</h1>
+</body>
+
+</html>
