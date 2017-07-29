@@ -1,19 +1,23 @@
-<!DOCTYPE html>
-<html>
+<title>Redirecting...</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    var parser = document.createElement('a');
+    parser.href = window.location.href;
+    var url = window.location.href.replace(parser.protocol + "//" + parser.host + parser.pathname + "?url=", "");
 
-<body>
-    <script src="https://booligoosh.github.io/urlParams/urlParams.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        var url = urlParams.url;
+    var zazzleUrl = url.includes("zazzle.com");
+    if (zazzleUrl) {
         var country = "?";
         $.get("https://ipinfo.io", function (response) {
-            console.log(response.city, response.country);
-            country = response.country;
+            //console.log(response.city, response.country);
+            //console.log(response.country);
+            if (response.country == "AU") {
+                //console.log("ye!");
+                url = url.replace(/zazzle.com/g, "zazzle.com.au");
+            }
+            window.location = url;
         }, "jsonp");
-        //window.location = url;
-    </script>
-    <h1>Redirecting...</h1>
-</body>
-
-</html>
+    } else {
+        window.location = url;
+    }
+</script>

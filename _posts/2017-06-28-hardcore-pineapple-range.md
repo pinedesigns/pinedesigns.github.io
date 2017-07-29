@@ -9,6 +9,6 @@ Our range features a design with three watercolor pineapples. Underneath it read
 
 We will be releasing some new cool designs soon based on watercolor pineapples, so don't forget to [watch out for those.][newsletter] We hope you enjoy, and you can [check out the range here.][hardcore-pineapple-range]
 
-[hardcore-pineapple-range]: {{site.zazzle.collections.hardcore-pineapple}}
+[hardcore-pineapple-range]: {{site.outlink}}{{site.zazzle.collections.hardcore-pineapple}}
 [mug-img]: {{site.postimg}}/hardcore-pineapple-range/mug.jpg
-[newsletter]: {{site.newsletter}}
+[newsletter]: {{site.outlink}}{{site.newsletter}}

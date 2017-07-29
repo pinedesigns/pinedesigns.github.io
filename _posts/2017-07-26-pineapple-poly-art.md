@@ -14,6 +14,6 @@ Enjoy!
 
 
 [product-img]: {{site.postimg}}/pineapple-poly-art/notebook.jpg
-[low-poly-triangulated-pineapple-range]: {{site.zazzle.collections.low-poly-triangulated-pineapple}}
+[low-poly-triangulated-pineapple-range]: {{site.outlink}}{{site.zazzle.collections.low-poly-triangulated-pineapple}}
 [contact]: {{site.contact.page}}
-[comments]: {{site.zazzle.comments}}
+[comments]: {{site.outlink}}{{site.zazzle.comments}}

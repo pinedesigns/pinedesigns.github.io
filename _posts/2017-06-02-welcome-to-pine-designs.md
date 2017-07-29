@@ -7,5 +7,5 @@ A huge warm welcome from Pine Designs! Pine Designs in a store which stocks all 
 ### [Take me to your shop!][store]
 
 [banner]: {{site.img.banner}}
-[store]: {{site.zazzle.store}}
+[store]: {{site.outlink}}{{site.zazzle.store}}
 [contact]: {{site.contact.page}}

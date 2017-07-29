@@ -26,8 +26,8 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-      <a class="sidebar-nav-item" href="{{ site.newsletter }}" target="blank" rel="nofollow">Newsletter</a>
-      <a class="sidebar-nav-item{% if page.title != 'Home' %} sidebar-shop-now{% endif %}" href="{{ site.zazzle.store }}" target="blank" rel="nofollow">{% if page.title == 'Home' %}<i class="fa fa-barcode"></i>&nbsp;{% endif %}Zazzle store</a>
+      <a class="sidebar-nav-item" href="{{site.outlink}}{{ site.newsletter }}" target="blank" rel="nofollow">Newsletter</a>
+      <a class="sidebar-nav-item{% if page.title != 'Home' %} sidebar-shop-now{% endif %}" href="{{site.outlink}}{{ site.zazzle.store }}" target="blank" rel="nofollow">{% if page.title == 'Home' %}<i class="fa fa-barcode"></i>&nbsp;{% endif %}Zazzle store</a>
       <!--<span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
     </nav>
 

@@ -7,5 +7,5 @@ Hey everyone, guess what? Today marks the day a month from when we posted our fi
 
 ### [Check out our store!][store]
 
-[store]: {{site.zazzle.store}}
+[store]: {{site.outlink}}{{site.zazzle.store}}
 [ecommerce-img]: {{site.postimg}}/our-first-month-online/ecommerce.jpg

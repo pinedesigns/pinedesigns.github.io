@@ -8,6 +8,6 @@ As we promised in our last post, here are our new [watercolor pineapple designs.
 
 Also, if you have anything that you want turned into a design you can buy, don't forget to [contact us.][contact]
 
-[watercolor-pineapple-range]: {{site.zazzle.collections.watercolor-pineapple}}
+[watercolor-pineapple-range]: {{site.outlink}}{{site.zazzle.collections.watercolor-pineapple}}
 [product-img]: {{site.postimg}}/watercolor-pineapple-range/badge.jpg
 [contact]: {{site.contact.page}}
