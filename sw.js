@@ -26,6 +26,7 @@ var urlsToCache = [];
 {% endfor %}
 // END MY MODIFICATIONS
 
+/*
 var CACHE_NAME = '{{ site.title | slugify }}-cache-v1';
 
 self.addEventListener('install', function(event) {
@@ -53,7 +54,7 @@ self.addEventListener('fetch', function(event) {
 // strategies from the offline cookbook by jake archibald
 // https://jakearchibald.com/2014/offline-cookbook/#serving-suggestions-responding-to-requests
 
-/*{% assign strategy = site.offline.strategy | default: 'cache-then-network' %}
+{% assign strategy = site.offline.strategy | default: 'cache-then-network' %}
 {% if strategy == 'cache-only' %}
   self.addEventListener('fetch', function(event) {
     // If a match isn't found in the cache, the response
@@ -118,6 +119,17 @@ self.addEventListener('fetch', function(event) {
     );
   });
 {% endif %}*/
+
+// MY MODIFICATIONS
+
+importScripts('/cache-polyfill.js');
+self.addEventListener('install', function (e) {
+    e.waitUntil(
+        caches.open('iosiconify1').then(function (cache) {
+            return cache.addAll(urlsToCache);
+        })
+    );
+});
  
  self.addEventListener('fetch', function (event) {
     console.log(event.request.url);

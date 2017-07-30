@@ -1,0 +1,39 @@
+---
+---
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "{{ site.title }} · {{ site.tagline }}",
+  "description": "{{site.description}}",
+  "short_name": "{{site.title}}",
+  "icons": [{
+    "src": "{{ site.baseurlactual }}public/apple-touch-icon-144-precomposed.png",
+    "sizes": "144x144",
+  }/*,{
+    "src": "icon/lowres.png",
+    "sizes": "64x64"
+  }, {
+    "src": "icon/hd_hi",
+    "sizes": "128x128"
+  }*/],
+  "scope": "/",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "orientation": "portrait-primary",
+  "theme_color": "#e8d000",
+  "background_color": "#eee",
+  "serviceworker": {
+    "src": "sw.js",
+    "scope": "/",
+    "use_cache": true
+  }/*,
+  "screenshots": [{
+    "src": "screenshots/in-game-1x.jpg",
+    "sizes": "640x480",
+    "type": "image/jpeg"
+  }{
+    "src": "screenshots/in-game-2x.jpg",
+    "sizes": "1280x920",
+    "type": "image/jpeg"
+  }]*/
+}
