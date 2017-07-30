@@ -53,7 +53,7 @@ self.addEventListener('fetch', function(event) {
 // strategies from the offline cookbook by jake archibald
 // https://jakearchibald.com/2014/offline-cookbook/#serving-suggestions-responding-to-requests
 
-{% assign strategy = site.offline.strategy | default: 'cache-then-network' %}
+/*{% assign strategy = site.offline.strategy | default: 'cache-then-network' %}
 {% if strategy == 'cache-only' %}
   self.addEventListener('fetch', function(event) {
     // If a match isn't found in the cache, the response
@@ -117,4 +117,13 @@ self.addEventListener('fetch', function(event) {
       })
     );
   });
-{% endif %}
+{% endif %}*/
+ 
+ self.addEventListener('fetch', function (event) {
+    console.log(event.request.url);
+    event.respondWith(
+        caches.match(event.request).then(function (response) {
+            return response || fetch(event.request);
+        })
+    );
+});
