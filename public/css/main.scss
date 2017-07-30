@@ -113,8 +113,18 @@ body {
 // CSS GRADIENTS from https://www.gradient-animator.com/
 .home-shop-now-not-hovered,
 .sidebar-shop-now {
-    background: linear-gradient(315deg, #000080, /*#ff0080*/
-    #00ff80);
+    //background: linear-gradient(315deg, #000080, /*#ff0080*/ #00ff80);
+    
+    
+    /* NEW GRADIENT from https://www.grabient.com/ */
+    background-color: #08AEEA;
+    background-image: -webkit-linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    background-image: -moz-linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    background-image: -o-linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    /* end new gradient*/
+    
+    
     background-size: 400% 400%;
     -webkit-animation: Pine-colors-animation-01 15s ease infinite;
     -moz-animation: Pine-colors-animation-01 15s ease infinite;
