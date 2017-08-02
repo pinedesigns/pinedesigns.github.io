@@ -4,20 +4,24 @@
     var parser = document.createElement('a');
     parser.href = window.location.href;
     var url = window.location.href.replace(parser.protocol + "//" + parser.host + parser.pathname + "?url=", "");
-
-    var zazzleUrl = url.includes("zazzle.com");
-    if (zazzleUrl) {
-        var country = "?";
-        $.get("https://ipinfo.io", function (response) {
-            //console.log(response.city, response.country);
-            //console.log(response.country);
-            if (response.country == "AU") {
-                //console.log("ye!");
-                url = url.replace(/zazzle.com/g, "zazzle.com.au");
-            }
+    if (url != '' && url != window.location ) {
+        var zazzleUrl = url.includes("zazzle.com");
+        if (zazzleUrl) {
+            var country = "?";
+            $.get("https://ipinfo.io", function (response) {
+                //console.log(response.city, response.country);
+                //console.log(response.country);
+                if (response.country == "AU") {
+                    //console.log("ye!");
+                    url = url.replace(/zazzle.com/g, "zazzle.com.au");
+                }
+                window.location = url;
+            }, "jsonp");
+        } else {
             window.location = url;
-        }, "jsonp");
-    } else {
-        window.location = url;
+        }
     }
 </script>
+
+
+{% include ga.html %}

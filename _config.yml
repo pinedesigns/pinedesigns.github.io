@@ -37,6 +37,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - github-pages
+  - jekyll-minifier
   - jekyll-sitemap # leave at the end
 
 offline:
