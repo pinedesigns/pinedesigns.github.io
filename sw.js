@@ -26,7 +26,6 @@ var urlsToCache = [];
 {% endfor %}
 // END MY MODIFICATIONS
 
-/*
 var CACHE_NAME = '{{ site.title | slugify }}-cache-v1';
 
 self.addEventListener('install', function(event) {
@@ -38,7 +37,7 @@ self.addEventListener('install', function(event) {
   }));
 });
 
-self.addEventListener('fetch', function(event) {
+/*self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.open(CACHE_NAME).then(function(cache) {
       return cache.match(event.request).then(function (response) {
@@ -49,7 +48,7 @@ self.addEventListener('fetch', function(event) {
       });
     })
   );
-});
+});*/
 
 // strategies from the offline cookbook by jake archibald
 // https://jakearchibald.com/2014/offline-cookbook/#serving-suggestions-responding-to-requests
@@ -118,24 +117,4 @@ self.addEventListener('fetch', function(event) {
       })
     );
   });
-{% endif %}*/
-
-// MY MODIFICATIONS
-
-importScripts('/cache-polyfill.js');
-self.addEventListener('install', function (e) {
-    e.waitUntil(
-        caches.open('iosiconify1').then(function (cache) {
-            return cache.addAll(urlsToCache);
-        })
-    );
-});
- 
- self.addEventListener('fetch', function (event) {
-    console.log(event.request.url);
-    event.respondWith(
-        caches.match(event.request).then(function (response) {
-            return response || fetch(event.request);
-        })
-    );
-});
+{% endif %}

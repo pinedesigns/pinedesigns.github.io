@@ -39,6 +39,9 @@ gems:
   - github-pages
   - jekyll-sitemap # leave at the end
 
+offline:
+  strategy: network-first-cache-fallback
+
 zazzle:
     store:     'https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio'
     products:  'https://www.zazzle.com/pinedesigns/products?rf=238712509161080982&tc=pinedesignsgithubio'
@@ -53,6 +56,8 @@ zazzle:
         watercolor-pineapple: 'https://www.zazzle.com/collections/juicy_watercolor_pineapple_range-119616646632761195?rf=238712509161080982&CMPN=share_dclit&lang=en&social=true'
         
         low-poly-triangulated-pineapple: 'https://www.zazzle.com/collections/low_poly_triangulated_pineapple_range-119795938814986927?rf=238712509161080982&CMPN=share_dclit&lang=en&social=true'
+        
+        trippy-multicolor-pineapple: 'https://www.zazzle.com/collections/trippy_multicolor_pineapple_range-119680132810111587?rf=238712509161080982&CMPN=share_dclit&lang=en&social=true'
 
 newsletter:    'https://bit.ly/pine_designs_newsletter_01'
     
