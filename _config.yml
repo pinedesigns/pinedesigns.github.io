@@ -42,6 +42,9 @@ gems:
 
 offline:
   strategy: network-first-cache-fallback
+  
+jekyll-minifier:
+  exclude: 'sw.js' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
 
 zazzle:
     store:     'https://www.zazzle.com/pinedesigns?rf=238712509161080982&tc=pinedesignsgithubio'
