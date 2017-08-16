@@ -336,3 +336,13 @@ $contact-cards-per-row: 2;
 .pagination-item {
     border: 1px solid #ddd;
 }
+
+/*GetSiteControl
+@media (min-width: 48em) {
+    w-div {
+        width: calc(100vw - 18rem) !important;
+        position: fixed !important;
+        right: 0 !important !important;
+        left: 18rem !important;
+    }
+}*/
