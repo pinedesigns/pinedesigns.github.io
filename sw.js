@@ -3,6 +3,8 @@
 
 importScripts('/cache-polyfill.js');
 
+var cacheUpToDate = true;
+
 var urlsToCache = [];
 
 /*posts*/
@@ -21,16 +23,40 @@ var urlsToCache = [];
 {% endfor %}
 /* END MY MODIFICATIONS */
 
-var CACHE_NAME = '{{ site.title | slugify }}-cache-v1';
+var CACHE_NAME = '{{ site.title | slugify }}-cache-{{site.git.last_commit.short_sha}}';
 
-self.addEventListener('install', function(e) {
+/*self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open(CACHE_NAME).then(function(cache) {
       return cache.addAll(urlsToCache);
     })
   );
+});*/
+
+var name;
+
+self.addEventListener('install', function(e) {
+  e.waitUntil(
+    caches.keys().then(function(cacheKeys) { 
+        for(var i = 0; i < cacheKeys.length; i++) {
+            name = cacheKeys[i];
+            cacheUpToDate = (name == CACHE_NAME); // ex: ["test-cache"]
+            console.log("cacheUpToDate is " + cacheUpToDate + " - " + name);
+            if(!cacheUpToDate) {
+                var cLogName = name;
+                caches.delete(name).then(function() { 
+                  console.log('Cache ' + cLogName + ' successfully deleted!'); 
+                });
+            }
+        }
+    })
+  );
 });
 
+caches.open(CACHE_NAME).then(function(cache) {
+    return cache.addAll(urlsToCache);
+})
+ 
 /*self.addEventListener('fetch', function(event) {
     console.log(event.request.url);
     event.respondWith(
@@ -39,6 +65,7 @@ self.addEventListener('install', function(e) {
         })
     );
 });*/
+
 self.addEventListener('fetch', function(event) {
     event.respondWith(
       fetch(event.request).catch(function() {

@@ -1,0 +1,23 @@
+---
+---
+<script>
+    var urlsToCache = [];
+    /*posts*/
+    {% for post in site.posts %}urlsToCache.push("{{ post.url }}");console.log("POST {{post.path}} LAST COMMIT: {{post.git.last_commit.short_sha}}");
+    {% endfor %}
+    /*pages*/
+    {% for page in site.pages %}{% if page.permalink %}urlsToCache.push("{{ page.permalink }}");{% endif %}{% if page.url %}urlsToCache.push("{{ page.url }}");{% endif %}console.log("PAGE {{page.url}} LAST COMMIT: {{page.git.last_commit.short_sha}}");
+    {% endfor %}
+    /* MY MODIFICATIONS */
+
+    /*static files*/
+    {% for file in site.static_files %}urlsToCache.push("{{file.path}}");console.log("FILE {{file.path}} LAST COMMIT: {{file.git.last_commit.short_sha}}");
+    {% endfor %}
+    /*html pages*/
+    {% for page in site.html_pages %}urlsToCache.push("{{ page.url }}");
+    {% endfor %}
+    /* END MY MODIFICATIONS */
+</script>
+<script>
+    console.log("{{site.git.last_commit.short_sha}}");
+</script>
