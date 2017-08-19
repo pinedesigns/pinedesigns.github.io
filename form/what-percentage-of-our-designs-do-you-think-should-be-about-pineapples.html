@@ -8,6 +8,9 @@ noGetSiteControl: true
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>What percentage of our designs do you think should be about pineapples? | Pine Designs</title>
     <style type="text/css">
+        body {
+            background-color: #e8d000 !important;
+        }
         html {
             margin: 0;
             height: 100%;
@@ -37,7 +40,9 @@ noGetSiteControl: true
 </head>
 
 <body>
-    <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://pinedesigns.typeform.com/to/R28L47"></iframe>
+   <div id="typeform-iframe-wrapper">
+        <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://pinedesigns.typeform.com/to/R28L47"></iframe>
+    </div>
     <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
 </body>
 
@@ -52,4 +57,9 @@ noGetSiteControl: true
         $("iframe").css("top", $(".sidebar").outerHeight() );
         console.log("correctHeight")
     }
+</script>
+<script>
+    $(function(){
+    $('iframe').each(function(index,elem){
+    $(elem).attr('onerror',"$( '#typeform-full' ).replaceWith( '<h6>You are offline.</h6><h1>Please connect to the internet to view this content.</h1>' );").attr('onload', "if(navigator.onLine===false) eval(this.getAttribute('onerror'));"); }); });
 </script>
