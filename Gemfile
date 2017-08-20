@@ -26,7 +26,7 @@ gem "github-pages"
 
 gem "jekyll-minifier"
 
-#gem 'jekyll-git_metadata'
+gem 'jekyll-git_metadata'
 
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
