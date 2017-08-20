@@ -51,44 +51,52 @@ self.addEventListener('install', function(e) {
                 response.json().then(function(data) {
                     console.log(data);
                     CACHE_NAME = '{{ site.title | slugify }}-cache-' + data[0].sha;
-                    for(var i = 0; i < cacheKeys.length; i++) {
-                        name = cacheKeys[i];
-                        console.log('installed, ' + CACHE_NAME);
-                        cacheUpToDate = (name == CACHE_NAME); // ex: ["test-cache"]
-                        console.log("cacheUpToDate is " + cacheUpToDate + ": " + name);
-                        if(!cacheUpToDate) {
-                            var cLogName = name;
-                            caches.delete(name).then(function() { 
-                              console.log('Cache ' + cLogName + ' successfully deleted!'); 
-                            });
+                    if(cacheKeys.length > 0) {
+                        for(var i = 0; i < cacheKeys.length; i++) {
+                            name = cacheKeys[i];
+                            console.log('installed, ' + CACHE_NAME);
+                            cacheUpToDate = (name == CACHE_NAME); // ex: ["test-cache"]
+                            console.log("cacheUpToDate is " + cacheUpToDate + ": " + name);
+                            if(!cacheUpToDate) {
+                                var cLogName = name;
+                                caches.delete(name).then(function() { 
+                                  console.log('Cache ' + cLogName + ' successfully deleted!'); 
+                                });
+                                caches.open(CACHE_NAME).then(function(cache) {
+                                    console.log('cache ' + CACHE_NAME + ' opened');
+                                    return cache.addAll(urlsToCache);
+                                });
+                                
+                            }
                         }
                     }
-                    caches.open(CACHE_NAME).then(function(cache) {
-                        console.log('cache ' + CACHE_NAME + ' opened');
-                        return cache.addAll(urlsToCache);
-                    });
+                    else {
+                        caches.open(CACHE_NAME).then(function(cache) {
+                            console.log('cache ' + CACHE_NAME + ' opened');
+                            return cache.addAll(urlsToCache);
+                        });
+                    }
+                    
                 });
             });
     })
   );
 });
- 
-/*self.addEventListener('fetch', function(event) {
-    console.log(event.request.url);
+
+//cache-first-network-only technique from https://github.com/jeremiak/jekyll-offline/blob/master/lib/sw.js
+self.addEventListener('fetch', function(event) {
+    //console.log(event.request.url);
     event.respondWith(
         caches.match(event.request).then(function(response) {
             return response || fetch(event.request);
         })
     );
-});*/
+});
 
-self.addEventListener('fetch', function(event) {
+/*self.addEventListener('fetch', function(event) {
     event.respondWith(
       fetch(event.request).catch(function() {
         return caches.match(event.request);
       })
     );
-    /*caches.open(CACHE_NAME).then(function(cache) {
-      return cache.addAll(urlsToCache);
-    });*/
-});
+});*/

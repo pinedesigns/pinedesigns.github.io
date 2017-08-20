@@ -36,7 +36,7 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-feed
-  - jekyll-git_metadata
+  #- jekyll-git_metadata
   - github-pages
   #- jekyll-minifier
   - jekyll-sitemap # leave at the end
